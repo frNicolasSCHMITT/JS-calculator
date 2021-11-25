@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 500px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: grey;
+  border-radius: 10px;
+}
+.calculator-screen {
+  height: 50px;
+  width: 90%;
+  margin: 0 5%;
+  background-color: lightgray;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#screenContent {
+  margin-left: 2%;
+}
+#clearTab {
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.calculator-tabs-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.calculatorTab {
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.resultTab {
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
