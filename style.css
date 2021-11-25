@@ -15,14 +15,22 @@ body {
   height: 500px;
   font-weight: bold;
   font-size: 1.5rem;
-  background-color: grey;
   border-radius: 10px;
+  background-color: #000000;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #000000 10px
+    ),
+    repeating-linear-gradient(#cc000055, #cc0000);
 }
 .calculator-screen {
   height: 50px;
   width: 90%;
   margin: 0 5%;
-  background-color: lightgray;
+  border-radius: 5px;
+  background-color: lightcyan;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -32,12 +40,18 @@ body {
 }
 #clearTab {
   padding: 10px;
-  background-color: lightgray;
+  background-color: black;
+  color: #cc0000;
+  font-weight: bolder;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+#clearTab:hover {
+  background-color: #cc0000;
+  color: #000000;
 }
 .calculator-tabs-group {
   display: grid;
@@ -46,19 +60,31 @@ body {
 }
 .calculatorTab {
   padding: 10px;
-  background-color: lightgray;
+  background-color: black;
+  color: #cc0000;
+  font-weight: bolder;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
+.calculatorTab:hover {
+  background-color: #cc0000;
+  color: #000000;
+}
 .resultTab {
   padding: 10px;
-  background-color: lightgray;
+  background-color: black;
+  color: #cc0000;
+  font-weight: bolder;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.resultTab:hover {
+  background-color: #cc0000;
+  color: #000000;
 }
